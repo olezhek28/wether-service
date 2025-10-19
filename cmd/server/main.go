@@ -8,6 +8,8 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 )
 
+const httpPort = ":3000"
+
 func main() {
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
@@ -20,7 +22,7 @@ func main() {
 
 	})
 
-	err := http.ListenAndServe(":3000", r)
+	err := http.ListenAndServe(httpPort, r)
 	if err != nil {
 		panic(err)
 	}
