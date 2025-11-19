@@ -1,0 +1,12 @@
+env: "local"
+
+port: 8080
+host: "localhost"
+
+db:
+  db_host: "localhost"
+  db_port: "54321"
+  db_password: "parol"
+  db_name: "weather"
+  ssl_mode: "disable"
+  username: "olezhek28"
